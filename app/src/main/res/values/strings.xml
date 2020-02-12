@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Tip Calculator</string>
+    <string name="tip_calculator_hint">Enter Amount</string>
+    <string name="textView_billAmount">Enter Amount</string>
+    <string name="txt_label_percent">0%</string>
+    <string name="tip_txt">Tip</string>
+    <string name="total_txt">Total</string>
+    <string name="txt_tip">$0.00</string>
+    <string name="txt_total">$0.00</string>
+    <string name="toast_message">Bill Amount cannot be 0!!</string>
+</resources>

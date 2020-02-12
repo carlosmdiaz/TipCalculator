@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText_BillAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="8"
+        android:padding="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_View_BillAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:background="@color/backgroundBillAmount"
+        android:hint="@string/textView_billAmount"
+        android:labelFor="@+id/editText_BillAmount"
+        android:text="@string/textView_billAmount"
+        android:padding="10dp"
+
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="@color/txt_color"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/show_seekBar_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_margin="16dp"
+        android:text="@string/txt_label_percent"
+        android:textAlignment="textEnd"
+        android:textSize="@dimen/txt_size" />
+
+    <TextView
+        android:id="@+id/show_text_tip"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_column="0"
+        android:layout_row="2"
+        android:layout_margin="16dp"
+        android:text="@string/tip_txt"
+        android:textSize="@dimen/txt_size" />
+
+    <TextView
+        android:id="@+id/show_text_total"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_column="0"
+        android:layout_row="3"
+        android:layout_margin="16dp"
+        android:text="@string/total_txt"
+        android:textSize="@dimen/txt_size" />
+
+    <TextView
+        android:id="@+id/show_textView_tip"
+        android:layout_width="291dp"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:layout_margin="16dp"
+        android:background="@color/tip_total_backcolor"
+        android:text="@string/txt_tip"
+        android:textAlignment="center"
+        android:textColor="@color/txt_color"
+        android:textSize="@dimen/txt_size" />
+
+    <TextView
+        android:id="@+id/show_textView_total"
+        android:layout_height="wrap_content"
+        android:layout_width="291dp"
+        android:layout_column="1"
+        android:layout_row="3"
+        android:layout_margin="16dp"
+        android:background="@color/tip_total_backcolor"
+        android:text="@string/txt_total"
+        android:textAlignment="center"
+        android:textColor="@color/txt_color"
+        android:textSize="@dimen/txt_size" />
+
+    <SeekBar
+        android:id="@+id/show_seekBar"
+        android:layout_width="309dp"
+        android:layout_height="62dp"
+        android:layout_row="1"
+        android:layout_column="1" />
+
+</GridLayout>
